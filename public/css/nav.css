@@ -1,0 +1,152 @@
+.navbar {
+background: #ffe8d6 !important;}
+
+.nav-link {
+font-weight: 500;
+}
+
+.dropdown-menu {
+border-radius: 10px;
+}
+
+.btn-outline-danger {
+border-radius: 20px;
+}
+/* NAVBAR BACKGROUND */
+.navbar {
+padding: 8px 0;
+border-bottom: 3px solid #e67e22;
+
+}
+
+/* BRAND TEXT */
+.navbar-brand {
+font-weight: 700;
+font-size: 14px;
+color: #6b2c00  !important;
+}
+
+.navbar-nav .nav-link{
+position: relative;
+font-size:16px;
+font-weight:600;
+color: #6b2c00 !important;
+margin-right:8px;
+}
+.navbar-nav .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #e67e22;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color: #e67e22 !important;
+}
+
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+
+/* DONATION BUTTON */
+.btn-donation{
+background:#d62828;
+color:white !important;
+border-radius:25px;
+padding:6px 18px;
+font-weight:600;
+border:none;
+}
+
+.btn-donation:hover{
+background:#b71c1c;
+}
+
+/* BHAKT NIWAS BUTTON */
+.btn-bhakt{
+background:#e67e22;
+color:white !important;
+border-radius:25px;
+padding:6px 15px;
+font-weight:600;
+border:none;
+white-space: nowrap;
+}
+
+.btn-bhakt:hover{
+background:#c34c0e;
+}
+
+.btn-annak{
+background:#8b0000;
+color:white !important;
+border-radius:25px;
+padding:8px 15px;
+font-weight:600;
+border:none;
+}
+
+.btn-annak:hover{
+background:#7b0206;
+}
+.dropdown-menu{
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.dropdown-item{
+font-size:16px;
+font-weight:500;
+}
+
+.dropdown-item:hover{
+background:#fde8c8;
+}
+
+.navbar-brand img{
+height:45px;
+margin-right:5px;
+}
+.goog-te-banner-frame.skiptranslate {
+display: none !important;
+}
+
+.goog-logo-link {
+display:none !important;
+}
+
+.goog-te-gadget {
+color: transparent !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+display:none !important;
+}
+
+body {
+top: 0px !important;
+}
+.language-switcher{
+display:flex;
+gap:3px;
+align-items:center;
+}
+
+.lang-btn{
+border:none;
+background:#8B3A1A;
+color:white;
+font-size:8px;
+padding:4px 6px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.lang-btn:hover{
+background:#b65a00;
+transform:scale(1.05);
+}

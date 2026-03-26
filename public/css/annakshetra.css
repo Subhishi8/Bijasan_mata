@@ -1,0 +1,66 @@
+.annakshetra-hero{
+
+height:320px;
+background:url("../images/annakshetra.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.annadaan-section{
+margin-top:80px;
+}
+
+.annadaan-box{
+
+background:#f7ecd7;
+padding:40px;
+border-radius:15px;
+text-align:center;
+border:3px solid #e7c46a;
+
+}
+
+.annadaan-box h2{
+color:#8B3A1A;
+margin-bottom:20px;
+}
+
+.sanskrit{
+margin:20px 0;
+color:#8B3A1A;
+}
+
+.donate-btn{
+
+background:linear-gradient(90deg,#ff7a00,#ff5200);
+border:none;
+padding:12px 30px;
+color:white;
+border-radius:30px;
+
+}
+
+.meal-booking{
+margin-top:80px;
+margin-bottom:80px;
+}
+
+.booking-card{
+
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+
+}
+
+.book-btn{
+
+background:#f4a261;
+border:none;
+padding:12px 40px;
+border-radius:25px;
+
+}

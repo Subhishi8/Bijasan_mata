@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Admin Login</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<style>
+
+body{
+background:linear-gradient(135deg,#8B3A1A,#c77d3a);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:sans-serif;
+}
+
+.login-card{
+
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+width:350px;
+
+}
+
+.login-card h3{
+
+text-align:center;
+margin-bottom:25px;
+color:#8B3A1A;
+
+}
+
+.btn-login{
+
+background:#8B3A1A;
+color:white;
+width:100%;
+}
+
+.btn-login:hover{
+background:#a24c25;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-card">
+
+<h3>Bijasan Admin</h3>
+
+<form id="loginForm">
+
+<input
+type="text"
+id="username"
+class="form-control mb-3"
+placeholder="Username"
+required
+>
+
+<input
+type="password"
+id="password"
+class="form-control mb-3"
+placeholder="Password"
+required
+>
+
+<button class="btn btn-login">
+Login
+</button>
+
+</form>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

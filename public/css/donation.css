@@ -1,0 +1,82 @@
+/* HERO SECTION */
+
+.donation-hero{
+height:320px;
+background:url("../images/donation.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.hero-overlay-box{
+background:rgba(255,255,255,0.9);
+padding:30px 50px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.hero-overlay-box h1{
+color:#8B3A1A;
+font-weight:700;
+}
+
+
+/* DONATION MESSAGE */
+
+.donation-message{
+margin-top:80px;
+}
+
+.donation-box{
+background:#f9f2e4;
+padding:40px;
+border-radius:15px;
+border:3px solid #e6c36a;
+text-align:center;
+}
+
+
+/* FORM SECTION */
+
+.donation-form-section{
+margin-top:80px;
+margin-bottom:80px;
+}
+
+.donation-card{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+}
+
+
+/* BUTTON */
+
+.donate-btn{
+background:linear-gradient(90deg,#ff7a00,#ff5200);
+color:white;
+border:none;
+padding:12px 40px;
+border-radius:30px;
+font-weight:600;
+}
+
+.donate-btn:hover{
+opacity:0.9;
+}
+.donation-success{
+
+display:none;
+background:#e8f8ee;
+border:2px solid #2ecc71;
+color:#1e7e34;
+padding:20px;
+border-radius:10px;
+text-align:center;
+margin-bottom:25px;
+font-weight:600;
+
+}

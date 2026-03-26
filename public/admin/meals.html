@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Annakshetra Bookings</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h4>🛕 Admin</h4>
+<a href="dashboard.html">📊 Dashboard</a>
+<a href="donations.html">🙏 Donations</a>
+<a href="rooms.html">🏨 Room Bookings</a>
+<a href="meals.html">🍽 Annakshetra</a>
+<a href="poojas.html">🪔 Pooja Bookings</a>
+<a href="messages.html">📩 Feedback</a>
+<a href="gallery.html">🖼 Gallery</a>
+<a href="events.html">📅 Events</a>
+</div>
+
+
+<!-- Top Navbar -->
+
+<div class="top-header">
+
+<h5>Bijasan Mata Mandir Admin</h5>
+<div id="google_translate_element"></div>
+<div>
+
+<button class="logout"  onclick="logout()">Logout</button>
+</div>
+</div>
+
+
+<div class="main">
+
+<h2 class="mb-4">Annakshetra Meal Bookings</h2>
+
+
+<!-- Total Meals -->
+
+<div class="row mb-4">
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<h6>Total Bookings</h6>
+
+<h3 id="totalMeals">0</h3>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Search -->
+
+<div class="row mb-3">
+
+<div class="col-md-4">
+
+<input
+type="text"
+id="searchMeals"
+class="form-control"
+placeholder="Search name or mobile"
+>
+
+</div>
+
+</div>
+
+<a href="/api/export-meals" class="btn btn-success mb-3">Export Meal Bookings</a>
+<!-- Table -->
+
+<div class="table-container">
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+<th>Name</th>
+<th>Mobile</th>
+<th>Email</th>
+<th>Date</th>
+<th>People</th>
+<th>Meal Time</th>
+<th>Amount</th>
+</tr>
+
+</thead>
+
+<tbody id="mealTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="js/meals.js"></script>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'en',
+includedLanguages: 'en,hi,mr,gu',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

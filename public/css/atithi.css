@@ -1,0 +1,58 @@
+.hero{
+
+height:500px;
+background:url("../images/temple3.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.hero-overlay{
+
+background:rgba(0,0,0,0.5);
+padding:20px;
+color:white;
+text-align:center;
+
+}
+
+.room-card{
+
+border:1px solid #ddd;
+padding:30px;
+border-radius:10px;
+text-align:center;
+background:white;
+margin: 30px;
+
+}
+
+.price{
+
+font-size:20px;
+font-weight:bold;
+color:#8B3A1A;
+
+}
+
+
+button{
+background:linear-gradient(90deg,#ff7a00,#ff5200);
+color:white;
+border:none;
+padding:12px 40px;
+border-radius:30px;
+font-weight:600;
+margin-bottom: 15px;
+}
+button:hover{
+opacity:0.9;
+}
+
+#roomCalendar {
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}

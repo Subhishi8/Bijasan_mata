@@ -1,0 +1,134 @@
+<!-- Navbar -->
+<head>
+<link rel="stylesheet" href="css/nav.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+
+<div class="container">
+
+<img src="images/logo.png" class="footer-logo">
+
+<a class="navbar-brand fw-bold" href="index.html">
+Bijasan Mata Mandir
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<!-- ABOUT DROPDOWN -->
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+About
+</a>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="about.html">About Temple</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="timing.html">Temple Timings</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="temples.html">Other Temples In Premises</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="events.html">News & Events</a>
+</li>
+
+</ul>
+</li>
+
+<!-- GALLERY -->
+<li class="nav-item">
+<a class="nav-link" href="gallery.html">Gallery</a>
+</li>
+
+<!-- CONTACT -->
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<!-- DONATION -->
+<li class="nav-item">
+<a class="btn btn-donation ms-2" href="donation.html">Donation</a>
+</li>
+
+<!-- BHAKT NIWAS -->
+<li class="nav-item">
+<a class="btn btn-bhakt ms-2" href="atithi-niwas.html">Atithi Niwas</a>
+</li>
+
+<!-- ANNAKSHETRA -->
+<li class="nav-item">
+<a class="btn btn-donation ms-2" href="Annakshetra.html">Annakshetra</a>
+</li>
+<!-- POOJA -->
+<li class="nav-item">
+<a class="btn btn-bhakt ms-2" href="pooja.html">Pooja</a>
+</li>
+
+<!-- LANGUAGE TRANSLATOR -->
+
+<li class="nav-item ms-3 language-switcher">
+  <div id="google_translate_element"></div>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+</nav>
+
+<!-- Scroll Effect -->
+<script>
+window.addEventListener("scroll", function(){
+let navbar = document.querySelector(".navbar");
+navbar.classList.toggle("scrolled", window.scrollY > 20);
+});
+</script>
+
+<!-- Google Translate -->
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'en',
+includedLanguages: 'en,hi,mr,gu',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function translatePage(lang) {
+
+if(lang === "en"){
+location.reload();
+return;
+}
+
+const url = window.location.href;
+
+window.location.href =
+"https://translate.google.com/translate?sl=en&tl=" +
+lang +
+"&u=" +
+encodeURIComponent(url);
+
+}
+</script>

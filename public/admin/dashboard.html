@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Temple Admin</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/admin.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h4>🛕 Admin</h4>
+
+<a href="dashboard.html">📊 Dashboard</a>
+
+<a href="donations.html">🙏 Donations</a>
+
+<a href="rooms.html">🏨 Room Bookings</a>
+
+<a href="meals.html">🍽 Annakshetra</a>
+<a href="poojas.html">🪔 Pooja Bookings</a>
+<a href="messages.html">📩 Feedback</a>
+<a href="gallery.html">🖼 Gallery</a>
+
+<a href="events.html">📅 Events</a>
+
+
+
+</div>
+
+
+<!-- Top Navbar -->
+
+<div class="top-header">
+
+<h5>Bijasan Mata Mandir Admin</h5>
+<div id="google_translate_element"></div>
+<div>
+
+<button class="logout"  onclick="logout()">Logout</button>
+</div>
+</div>
+<!-- Main Content -->
+
+<div class="main">
+
+<h3 class="mb-4">Dashboard Overview</h3>
+
+<div class="row mb-4">
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<p>Total Donations</p>
+
+<h2 id="donations">0</h2>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<p>Room Bookings</p>
+
+<h2 id="rooms">0</h2>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="stat-card">
+
+<p>Annakshetra Meals</p>
+
+<h2 id="meals">0</h2>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Charts -->
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="stat-card">
+
+<h5>Donation Distribution</h5>
+
+<canvas id="donationChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="stat-card">
+
+<h5>Temple Services Usage</h5>
+
+<canvas id="serviceChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="row mt-4">
+
+<div class="col-md-4">
+
+<div class="quick-card">
+
+<h5>Quick Actions</h5>
+
+<a href="events.html" class="btn btn-warning w-100 mb-2">
+Add Event
+</a>
+
+<a href="gallery.html" class="btn btn-success w-100 mb-2">
+Upload Photo
+</a>
+
+<a href="donations.html" class="btn btn-primary w-100">
+View Donations
+</a>
+
+</div>
+
+</div>
+
+<div class="col-md-8">
+
+<div class="quick-card">
+
+<h5>Recent Activity</h5>
+
+<ul id="recentActivity">
+
+<li>New donation received</li>
+<li>Room booking completed</li>
+<li>Meal booking done</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+<script>
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'en',
+includedLanguages: 'en,hi,mr,gu',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

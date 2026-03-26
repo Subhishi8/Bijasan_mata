@@ -1,0 +1,34 @@
+.temple-hero{
+
+height:320px;
+background:url("../images/temple1.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+.temple-list{
+margin-top:80px;
+}
+
+.temple-row{
+margin-bottom:80px;
+}
+.temple-img{
+transition:0.4s;
+}
+
+.temple-img:hover{
+transform:scale(1.05);
+}
+
+.temple-img{
+
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+
+}

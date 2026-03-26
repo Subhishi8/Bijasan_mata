@@ -1,0 +1,122 @@
+/* NAVBAR */
+.navbar {
+background: #ffe8d6 !important;
+padding: 8px 0;
+border-bottom: 3px solid #e67e22;
+}
+
+/* BRAND */
+.navbar-brand {
+font-weight: 700;
+font-size: 14px;
+color: #6b2c00 !important;
+}
+
+/* NAV LINKS */
+.navbar-nav {
+align-items: center;
+flex-wrap: nowrap;
+}
+
+.navbar-nav .nav-link {
+position: relative;
+font-size: 15px;
+font-weight: 600;
+color: #6b2c00 !important;
+margin-right: 8px;
+white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover {
+color: #e67e22 !important;
+}
+
+.navbar-nav .nav-link::after {
+content: "";
+position: absolute;
+width: 0%;
+height: 2px;
+left: 0;
+bottom: 0;
+background: #e67e22;
+transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+width: 100%;
+}
+
+/* BUTTONS */
+.btn-donation,
+.btn-bhakt,
+.btn-annak,
+.btn-pooja {
+border-radius: 20px;
+padding: 5px 12px;
+font-size: 13px;
+font-weight: 600;
+color: white !important;
+border: none;
+}
+
+.btn-donation { background:#d62828; }
+.btn-bhakt { background:#e67e22; }
+.btn-annak { background:#8b0000; }
+.btn-pooja { background:#8B3A1A; }
+
+.btn-donation:hover { background:#b71c1c; }
+.btn-bhakt:hover { background:#c34c0e; }
+.btn-annak:hover { background:#7b0206; }
+.btn-pooja:hover { background:#b65a00; }
+
+/* DROPDOWN */
+.dropdown-menu {
+border-radius: 10px;
+box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.dropdown-item:hover {
+background: #fde8c8;
+}
+
+/* LOGO */
+.footer-logo {
+height: 45px;
+margin-right: 5px;
+}
+
+/* LANGUAGE SWITCHER */
+.language-switcher {
+display: flex;
+gap: 5px;
+align-items: center;
+}
+
+.lang-btn {
+border: none;
+background: #8B3A1A;
+color: white;
+font-size: 12px;
+padding: 5px 8px;
+border-radius: 10px;
+transition: 0.3s;
+}
+
+.lang-btn:hover {
+background: #b65a00;
+transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+.navbar-nav {
+flex-wrap: wrap;
+}
+
+.language-switcher {
+margin-top: 10px;
+justify-content: center;
+}
+
+}
