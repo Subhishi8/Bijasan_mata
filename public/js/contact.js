@@ -6,7 +6,7 @@ email: document.getElementById("email").value,
 mobile: document.getElementById("mobile").value,
 message: document.getElementById("message").value
 };
-await fetch("/api/contact",{
+await fetch("/api/messages",{
 method:"POST",
 headers:{
 "Content-Type":"application/json"
