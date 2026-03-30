@@ -31,7 +31,7 @@
 <form id="contactForm">
 <input type="text" class="form-control mb-3" placeholder="Full Name" id="name" required>
 <input type="email" class="form-control mb-3" placeholder="Email Address" id="email" >
-<input type="text" class="form-control mb-3" placeholder="Mobile Number" id="mobile" required>
+<input type="tel" class="form-control mb-3" placeholder="Mobile Number" id="mobile" pattern="[5-9]{1}[0-9]{9}" maxlength="10" required>
 <textarea class="form-control mb-3" rows="4" placeholder="Write your message" id="message" required></textarea>
 <button class="btn temple-btn w-100">Send Message</button>
 </form>
